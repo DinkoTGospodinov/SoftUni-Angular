@@ -1,0 +1,42 @@
+<header>
+  <div class="nav">
+    <div class="logo">
+      <p class="logo">CookBook</p>
+    </div>
+
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/home">Home</a>
+        </li>
+        <li>
+          <a routerLink="/themes">Dishes</a>
+        </li>
+        <li>
+          <a routerLink="/add-theme">New Dish</a>
+        </li>
+      </ul>
+
+      <div *ngIf="!isLoggedIn" class="right-nav">
+        <ul>
+          <li>
+            <a routerLink="/login">Login</a>
+          </li>
+          <li>
+            <a routerLink="/register">Register</a>
+          </li>
+        </ul>
+      </div>
+      <div *ngIf="isLoggedIn" class="right-nav">
+        <ul>
+          <li>
+            <a routerLink="/profile"> `s Profile</a>
+          </li>
+          <li>
+            <a routerLink="/logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
