@@ -4,6 +4,7 @@
 }
 html {
   box-sizing: border-box;
+  
 }
 *,
 *:before,
@@ -24,7 +25,6 @@ select,
 button {
   font: inherit;
 }
- 
 
 h1,
 h2,

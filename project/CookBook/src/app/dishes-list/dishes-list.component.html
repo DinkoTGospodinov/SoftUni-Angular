@@ -1,20 +1,13 @@
- 
 <main>
-  <div *ngIf="isLoading">
-    <app-loader />
-  </div>
-
-  <div *ngIf="!isLoading" class="dishes">
-    <div *ngFor="let dish of dishes">
-      <div class="card" style="width: 18rem">
-        <img src="" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">{{ dish.name }}</h5>
-          <p class="card-text">
-         {{dish.steps}}
-          </p>
-          <a href="#" class="btn btn-primary">Details</a>
-        </div>
+  <div *ngFor="let dish of dishes">
+    <div class="card" style="width: 18rem">
+      <img src="../../assets/What-Is-Chaos-Cooking-TikToks-Latest-Obsession-FT-BLOG0723-be130eb8cffe400eb13ccfbe47de733a.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ dish.name }}</h5>
+        <p class="card-text">
+          {{ dish.steps }}
+        </p>
+        <a href="#" class="btn btn-primary">Details</a>
       </div>
     </div>
   </div>

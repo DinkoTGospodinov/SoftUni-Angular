@@ -1,3 +1,9 @@
 <app-header />
- <app-main />
+<div *ngIf="isLoading">
+  <app-loader />
+</div>
+<div *ngIf="!isLoading">
+  <app-main />
+</div>
+
 <app-footer />
