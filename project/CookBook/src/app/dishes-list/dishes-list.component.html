@@ -1,32 +1,19 @@
+ 
 <main>
   <div *ngIf="isLoading">
     <app-loader />
   </div>
-  <div *ngIf="!isLoading" class="theme-title">
-    <div *ngFor="let dish of dishes" class="theme-container">
-      <div class="theme-name-wrapper">
-        <div class="theme-name">
-          <a href="#" class="normal">
-            <h2>{{ dish.name }}</h2>
-          </a>
-          <div class="columns">
-            <div>
-              <p>
-                Date: <time>{{ dish._createdOn }}</time>
-              </p>
-              <div class="nick-name">
-                <p>
-                  Username: <span>{{ dish._ownerId }}</span>
-                </p>
-              </div>
-            </div>
-            <div class="subscribers">
-              <!-- <button class="subscribe">Subscribe</button> -->
-              <p>
-                Preparing Steps: <span>{{ dish.steps }}</span>
-              </p>
-            </div>
-          </div>
+
+  <div *ngIf="!isLoading" class="dishes">
+    <div *ngFor="let dish of dishes">
+      <div class="card" style="width: 18rem">
+        <img src="" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ dish.name }}</h5>
+          <p class="card-text">
+         {{dish.steps}}
+          </p>
+          <a href="#" class="btn btn-primary">Details</a>
         </div>
       </div>
     </div>
