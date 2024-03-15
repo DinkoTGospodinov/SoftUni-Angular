@@ -1,9 +1,11 @@
-<app-header />
+ 
 <div *ngIf="isLoading">
   <app-loader />
 </div>
 <div *ngIf="!isLoading">
+  <app-header />
   <app-main />
+  <app-footer />
 </div>
-
-<app-footer />
+<router-outlet/>
+ 
