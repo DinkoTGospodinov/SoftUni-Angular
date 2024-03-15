@@ -7,15 +7,18 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { MainComponent } from './main/main.component';
 import { DishesListComponent } from './dishes-list/dishes-list.component';
-import { PostDishesComponent } from './post-dishes/post-dishes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { AddDishComponent } from './dish/add-dish/add-dish.component';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     DishesListComponent,
-    PostDishesComponent,
+    HomeComponent,
+    AddDishComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     CoreModule,
     SharedModule,
     HttpClientModule,
+    UserModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
