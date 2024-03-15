@@ -10,6 +10,9 @@ header ul {
   width: 75%;
   margin: auto;
 }
+header p {
+  cursor: pointer;
+}
 header ul span {
   color: white;
   padding: 0.5em;
