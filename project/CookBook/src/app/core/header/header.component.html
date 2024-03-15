@@ -1,20 +1,20 @@
 <header>
-    <nav>
-      <div class="logo">
-        <p class="logo">CookBook</p>
-      </div>
-      <ul>
-        <li>
-          <a routerLink="/home">Home</a>
-        </li>
-        <li>
-          <a routerLink="/themes">Dishes</a>
-        </li>
-        <li>
-          <a routerLink="/add-theme">New Dish</a>
-        </li>
-      </ul>
-      <div class="right-nav-w"> 
+  <div class="logo">
+    <p class="logo">CookBook</p>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="/home">Home</a>
+      </li>
+      <li>
+        <a routerLink="/themes">Dishes</a>
+      </li>
+      <li>
+        <a routerLink="/add-theme">New Dish</a>
+      </li>
+    </ul>
+    <div class="right-nav-w">
       <div *ngIf="!isLoggedIn" class="right-nav">
         <ul>
           <li>
@@ -36,6 +36,5 @@
         </ul>
       </div>
     </div>
-    </nav>
- 
+  </nav>
 </header>

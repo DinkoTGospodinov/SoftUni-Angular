@@ -24,16 +24,7 @@ select,
 button {
   font: inherit;
 }
-
-ul,
-ol {
-  padding-bottom: 1.5em;
-}
-
-ul,
-ol {
-  padding-left: 2.5em;
-}
+ 
 
 h1,
 h2,
@@ -85,7 +76,7 @@ h6 {
 }
 
 body {
-  max-width: 1366px;
+  max-width: 1300px;
   margin: auto;
   position: relative;
   min-height: 100vh;

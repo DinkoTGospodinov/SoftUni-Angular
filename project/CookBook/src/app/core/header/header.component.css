@@ -3,6 +3,7 @@ header {
 }
 header nav {
   display: flex;
+  border-top: 1px solid white;
 }
 header ul {
   display: flex;
@@ -12,6 +13,7 @@ header ul {
 }
 header p {
   cursor: pointer;
+ margin-bottom: 0;
 }
 header ul span {
   color: white;
@@ -28,10 +30,12 @@ header a {
   cursor: pointer;
 }
 .logo {
+  padding: 0;
   font-size: 1.3em;
   color: white;
-  margin-top: 0.3em;
-  margin-left: 1em;
+  text-align: center;
+  background-color: chocolate;
+  border-bottom: 1px solid white;
 }
 .right-nav-w {
   display: flex;
