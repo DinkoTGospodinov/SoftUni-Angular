@@ -1,0 +1,8 @@
+.wrap {
+    max-height: 100vh;
+    background-image: url(../../../assets/calum-lewis-vA1L1jRTM70-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding-bottom: 10em;
+  }

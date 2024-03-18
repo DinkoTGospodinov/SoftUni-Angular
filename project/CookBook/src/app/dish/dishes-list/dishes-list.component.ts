@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
-import { Dish } from '../types/dishes';
+import { ApiService } from '../../api.service';
+import { Dish } from '../../types/dishes';
 
 @Component({
   selector: 'app-dishes-list',
@@ -14,7 +14,7 @@ export class DishesListComponent implements OnInit {
 
   ngOnInit(): void {
     this.api.getDishes().subscribe((dishes) => {
-      console.log(dishes);
+ 
       this.dishes = dishes;
       setTimeout(() =>{
         this.isLoading = false;

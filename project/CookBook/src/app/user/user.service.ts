@@ -4,6 +4,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserService {
+isLogged:boolean = false;
 
-  constructor() { }
+  constructor() { 
+    
+  }
+
+  login(){}
+  
+
+  logout(){}
 }
