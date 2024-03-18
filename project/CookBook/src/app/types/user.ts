@@ -7,3 +7,10 @@ export interface User{
     password:string;
     dish:Dish;
 }
+
+export interface UserForAuth{
+    firstName:string;
+    email:string;
+    phoneNumber:string;
+    passWord:string;
+}

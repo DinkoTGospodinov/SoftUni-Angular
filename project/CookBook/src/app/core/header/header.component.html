@@ -28,10 +28,10 @@
       <div *ngIf="isLoggedIn" class="right-nav">
         <ul>
           <li>
-            <a routerLink="/profile"> `s Profile</a>
+            <a routerLink="/profile"> {{firstName}}`s Profile</a>
           </li>
           <li>
-            <a routerLink="/logout">Logout</a>
+            <a (click)="logout()">Logout</a>
           </li>
         </ul>
       </div>

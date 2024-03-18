@@ -14,7 +14,8 @@ export class DishesListComponent implements OnInit {
 
   ngOnInit(): void {
     this.api.getDishes().subscribe((dishes) => {
- 
+      console.log(dishes);
+      
       this.dishes = dishes;
       setTimeout(() =>{
         this.isLoading = false;
