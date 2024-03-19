@@ -10,11 +10,21 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   getDishes() {
-    const {apiUrl} = environment;
+    const { apiUrl } = environment;
 
-    return this.http.get<Dish[]>(`${apiUrl}/recipes`)
+    return this.http.get<Dish[]>(`${apiUrl}/recipes`);
   }
 
+  getSingleDish(id: string) {
+    const { apiUrl } = environment;
+    this.http.get<Dish>(`${apiUrl}/dishes/${id}`);
+  }
 
-  getSingleDish() {}
+  createDish(dishTitle: string, postIngredients: string, postSteps: string) {
+    return this.http.post<Dish>('http://localhost:3030/jsonstore/recipes', {
+      dishTitle,
+      postIngredients,
+      postSteps,
+    });
+  }
 }

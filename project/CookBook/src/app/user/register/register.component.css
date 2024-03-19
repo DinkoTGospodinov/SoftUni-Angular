@@ -1,10 +1,12 @@
-.register-form{
-    max-width: 500px;
-     
-    border-radius: 5px;
-   margin: 0 auto;
+.register-form {
+  max-width: 500px;
+  border: 1em solid rgb(116, 227, 57);
+  border-radius: 1em;
+  margin: 0 auto;
+  background-color: hsla(0, 0%, 94.1%, .8);
+
 }
-.text-center{
-    text-align: center;
-padding-left: 19em;
+.text-center {
+  text-align: center;
+  padding-left: 19em;
 }

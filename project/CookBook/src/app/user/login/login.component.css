@@ -1,5 +1,8 @@
 .login-form{
     max-width: 500px;
- 
    margin: 0 auto;
+   border: 1em solid rgb(116, 227, 57);
+   border-radius: 1em;
+   background-color: hsla(0, 0%, 94.1%, .8);
+    
 }

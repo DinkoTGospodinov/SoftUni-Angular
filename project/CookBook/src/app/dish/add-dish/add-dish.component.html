@@ -1,1 +1,54 @@
  
+<div class="container">
+    <div class="add-dish">
+  <div class="add-dish-form">
+    <span>New Dish</span>
+  </div>
+  <form method="post">
+    <div class="new-dish-title">
+      <label for="dishTitle">Title <span class="red">*</span></label>
+      <input type="text" name="dishTitle" id="dishTitle" #dishTitle />
+      <!-- <p class="error">Dish title is required.</p>
+      <p class="error">Dish title must be at least 5 characters long.</p> -->
+    </div>
+    <div class="new-dish-ingredients">
+      <label for="postIngredients"
+        >Ingredients <span class="red">*</span></label
+      >
+      <textarea
+        type="text"
+        name="postIngredient"
+        id="postIngredient"
+        rows="3"
+        class="height"
+        #postIngredients
+      ></textarea>
+      <!-- <p class="error">The field with your post is required.</p>
+      <p class="error">Post must be at least 10 characters long.</p> -->
+    </div>
+    <div class="new-dish-steps">
+      <label for="postSteps">Steps <span class="red">*</span></label>
+      <textarea
+        type="text"
+        name="postSteps"
+        id="postSteps"
+        rows="3"
+        class="height"
+        #postSteps
+      ></textarea>
+      <!-- <p class="error">The field with your post is required.</p>
+      <p class="error">Post must be at least 10 characters long.</p> -->
+    </div>
+    <!-- <div class="new-dish-id">
+        <label for="dishid">Id <span class="red">*</span></label>
+        <input type="text" name="dishId" id="dishId" />
+        <p class="error">Dish id is required.</p>
+        <p class="error">Dish id must be at least 5 characters long.</p>
+      </div> -->
+    <div class="new-dish-buttons">
+      <button class="cancel">Cancel</button>
+      <button class="public" (click)="addDish($event,dishTitle.value, postIngredients.value,postSteps.value)">Post</button>
+    </div>
+  </form>
+</div>
+</div>

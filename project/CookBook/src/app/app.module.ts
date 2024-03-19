@@ -21,7 +21,7 @@ import { ErrorComponent } from './error/error.component';
     HttpClientModule,
     UserModule,
     DishModule,
-    
+
     AppRoutingModule,
   ],
   providers: [],

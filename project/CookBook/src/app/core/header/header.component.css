@@ -37,7 +37,7 @@ header a {
   background-color: chocolate;
   border-bottom: 1px solid white;
 }
-.right-nav-w {
+.right-nav{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;

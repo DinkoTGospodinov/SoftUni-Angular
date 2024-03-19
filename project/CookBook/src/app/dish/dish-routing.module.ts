@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
  import { AddDishComponent } from './add-dish/add-dish.component';
 import { MainComponent } from './main/main.component';
 import { CurrentDishComponent } from './current-dish/current-dish.component';
+import { AuthActivate } from '../guards/auth.activate';
 
 const routes: Routes = [
   {
@@ -15,6 +16,7 @@ const routes: Routes = [
   {
     path: 'add-dish',
     component: AddDishComponent,
+    canActivate:[AuthActivate]
   },
  
 ];
