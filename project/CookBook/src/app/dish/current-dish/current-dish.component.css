@@ -1,0 +1,12 @@
+.wrapper{
+    border: 1px solid black;
+    max-width: 290px;
+    margin: 0 auto;
+}
+
+.btn-like{
+    border: 1px solid black;
+    border-radius: 5px ;
+    padding: 5px;
+    background-color: rgb(145, 214, 145);
+}

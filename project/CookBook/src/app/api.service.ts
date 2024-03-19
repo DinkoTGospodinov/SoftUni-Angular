@@ -17,7 +17,7 @@ export class ApiService {
 
   getSingleDish(id: string) {
     const { apiUrl } = environment;
-    this.http.get<Dish>(`${apiUrl}/dishes/${id}`);
+    return this.http.get<Dish>(`${apiUrl}/recipes/${id}`);
   }
 
   createDish(dishTitle: string, postIngredients: string, postSteps: string) {
